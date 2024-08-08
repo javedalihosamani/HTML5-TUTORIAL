@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROGRESS TAG</title>
+        <style>
+            progress{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>PROGRESS TAG..!</h1>
+            The progress element represents the completion progress of a task. The progress is either indeterminate, indicating that progress is being made but that it is not clear how much more work remains to be done before the task is complete (e.g. because the task is waiting for a remote host to respond), or the progress is a number in the range zero to a maximum, giving the fraction of work that has so far been completed.
+        </center>
+
+        <hr>
+
+        <h3>Default Progress Tag..!</h3>
+        <progress></progress>
+
+        <h3>Static Progress Tag</h3>
+        <progress min="1" max="100" value="70">70%</progress>
+        <progress min="1" max="100" value="20">20%</progress>
+        <progress min="1" max="100" value="90">90%</progress>
+
+        <h3>Dynamic Progress Tag</h3>
+        <progress min="1" max="100" id="progress"></progress>
+        <p><span id="progress-text">0</span>% complete...</p>
+    </body>
+</html>
