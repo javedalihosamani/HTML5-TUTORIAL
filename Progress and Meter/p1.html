@@ -29,5 +29,21 @@
         <h3>Dynamic Progress Tag</h3>
         <progress min="1" max="100" id="progress"></progress>
         <p><span id="progress-text">0</span>% complete...</p>
+
+        <script>
+            let minScript = 1;
+
+            function startProgress(){
+                let progress = document.getElementById('progress');
+                let progressText = document.getElementById('progress-text');
+
+                if(minScript < 100){
+                    minScript++; // 1 + 1 = 2
+                    progress.value = minScript;
+                    progressText.textContent = minScript;
+                }
+            }
+            setInterval('startProgress()',1000);
+        </script>
     </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CANVAS</title>
+    </head>
+    <body>
+        <center>
+            <h2>Drawing Circle on Canvas</h2>
+        </center>
+        <hr>
+        
+        <canvas id="myCanvasCircle" width="200" height="200" style="border:1px solid green;"></canvas>
+        <script>
+            let canvas2 = document.getElementById("myCanvasCircle").getContext("2d");
+            canvas2.fillStyle = "red";
+            canvas2.arc(100,100, 90, 0, 2*Math.PI);
+            canvas2.fill();
+        </script>
+    
+    </body>
+</html>
